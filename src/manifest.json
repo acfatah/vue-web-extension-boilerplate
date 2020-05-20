@@ -1,0 +1,27 @@
+{
+  "name": "vue-web-extension-boilerplate",
+  "description": "A boilerplate to start a Vue web extension.",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "icons": {
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "browser_action": {
+    "default_title": "vue-web-extension-boilerplate",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": [
+      "browser-polyfill.js",
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "chrome_style": true
+  }
+}
